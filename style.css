@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&family=Voces&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto';
+}
+
+.whole {
+    background-color: rgb(246, 247, 248);
+    height: 368dvh;
+    display: grid;
+    grid-template-rows: repeat(3, 95dvh) 70dvh auto;
+    padding: 1%;
+}
+
+.whole>div {
+    /* border: 2px solid; */
+}
+
+.page1 {
+    background-color: rgb(130, 156, 94);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 2%;
+    color: white;
+    background-image: url('./assests/leaf=sunshine.jpg');
+    background-size: cover;
+    background-position: 0% top;
+    position: relative;
+    z-index: 1;
+}
+
+.page1 nav {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.4vmax;
+    justify-content: space-between;
+    height: 6%;
+    align-items: center;
+}
+
+.page1 nav .nav-right {
+    display: flex;
+    /* background-color: blue; */
+    width: 30%;
+    justify-content: space-around;
+    height: 90%;
+    align-items: center;
+}
+
+.page1 nav button {
+    height: 90%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vmax;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.page1 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.page1 main h1 {
+    font-size: 8vmax;
+}
+
+.page1 main h3 {
+    font-size: 2vmax;
+    text-transform: uppercase;
+}
+
+.page2 {
+    background-color: rgb(232, 233, 230);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2 header {
+    /* background-color: red;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 50%;
+    font-size: 3.5vmax;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.page2 header b {
+    /* background-color: yellow; */
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* border-bottom: 0.3vmax solid black; */
+}
+
+.page2 header b::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 0.3vmax;
+    background-color: black;
+}
+
+.page2 main {
+    /* background-color: goldenrod; */
+    height: 70%;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    gap: 3%;
+}
+
+.page2 main>div {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 95%;
+    background-color: rgb(247, 244, 244);
+    box-shadow: 10px 15px 25px 5px rgb(120, 120, 120);
+}
+
+.card .top1,
+.top2,
+.top3 {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    height: 55%;
+    width: 100%;
+}
+
+.card .bottom {
+    height: 45%;
+    width: 100%;
+    background-color: rgb(243, 239, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+    font-size: 1.3vmax;
+}
+
+.card .bottom::before {
+    content: "";
+    background-color: black;
+    height: 0.2vmax;
+    width: 30%;
+}
+
+.card .top1 {
+    background-image: url('https://plus.unsplash.com/premium_photo-1663950774904-b33d93c9162e?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.card .top2 {
+    background-image: url('https://images.unsplash.com/photo-1624817670169-57a1245cf3f1?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card .top3 {
+    background-image: url('https://plus.unsplash.com/premium_photo-1675314800192-f5a9f1f6f654?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.page3 {
+    /* border: 2px solid ; */
+    display: flex;
+    gap: 3%;
+
+}
+
+.page3 div {
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(223, 166, 166); */
+}
+
+.page3 div:nth-child(2) {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10%;
+    width: 50%;
+}
+
+.page3 .head {
+    font-size: 3.5vmax;
+    text-transform: uppercase;
+    font-weight: 450;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+    /* background-color: red; */
+    /* border-bottom: 0.5vmax solid; */
+}
+
+.page3 .head::after {
+    content: "";
+    background-color: black;
+    height: 5%;
+    width: 20%;
+    ;
+}
+
+.page3 div:nth-child(2) p {
+    font-size: 1.4vmax;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.page3>div:nth-child(1) {
+    background-color: rgb(169, 159, 159);
+    background-image: url('https://images.unsplash.com/photo-1621849400072-f554417f7051?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.page4 {
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    /* align-items: center; */
+}
+
+.page4 main {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    /* height: 60%; */
+}
+
+.page4 main>h1 {
+    font-size: 4vmax;
+    text-transform: uppercase;
+}
+
+.page4 main>p {
+    font-size: 1.7vmax;
+}
+
+.page4 form {
+    /* background-color: rgb(207, 158, 158); */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4 form input {
+    height: 40%;
+    width: 100%;
+    padding: 0% 10% 0% 10%;
+    font-size: 1.2vmax;
+}
+
+.page4 form button {
+    height: 40%;
+    width: 60%;
+    /* border: none; */
+    border-radius: 10px;
+}
+
+.whole>footer {
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10% 0% 10%;
+    /* background-color: palegreen; */
+}
+
+.whole>footer .ft-right {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.3vmax;
+    gap: 10%;
+    align-items: center;
+    /* justify-items: flex-end; */
+}
+
+.whole>footer .ft-left {
+    font-size: 1.8vmax;
+}
+
+.nav-right p {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-right p:hover {
+    background-color: white;
+    color: black;
+   border: 2px solid white;
+    cursor: pointer;
+}
+.nav-right button{
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav-right button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.nav-right button:active{
+    transform: scale(0.8);
+}
+.page2 main{
+    perspective: 1000px;
+}
+.card{
+ transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+ cursor: pointer;
+}
+.card:hover{
+ transform: rotateY(30deg);
+}
+.card:nth-child(2):hover{
+    transform: rotateX(30deg);
+}
+.card:nth-child(3):hover{
+    transform: rotateY(-30deg);
+}
+.page1 main h1 ,h3{
+    letter-spacing: 15%;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+.page1 h1:hover , h3:hover{
+    letter-spacing: 5%;
+}
+
+form > button{
+    background-color: black;
+    color: white;
+    font-size: 1.2vmax;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+form > button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+form > button:active{
+    transform: scale(0.8);
+}
+
+.logo{
+    font-size: 2vmax;
+    font-family: "Playfair Display";
+    font-weight: 600;
+}
